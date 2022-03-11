@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(175, 166, 166);
+    color: black;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header,form{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    background-color:white;
+}
+
+button{
+    color:black;
+    background-color: grey;
+    border: none;
+    margin: 0;
+
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-list{
+    min-width: 60%;
+    list-style: none;
+}
+
+.todo{
+    margin: .5rem;
+    padding: 3px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5 ease;
+}
+
+.todoLi{
+    flex: 1;
+}
+
+.com-btn{
+    padding: 3px;
+    background-color: green;
+    font-size: 1rem;
+    color: white;
+}
+.del-btn{
+    padding: 3px;
+    background-color: darkred;
+    font-size: 1rem;
+    margin-left: 3px;
+    color: white;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.fall{
+    transform: translate(50px,50%); /*dont know why its not falling*/
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
